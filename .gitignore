@@ -1,4 +1,16 @@
 # Git Ignore
+
+# Large dataset
 Data/train_folder.zip
 Data/train_folder
 Data/train_folder/*/*.png
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables file
+.env
+.env.*
+.secret
