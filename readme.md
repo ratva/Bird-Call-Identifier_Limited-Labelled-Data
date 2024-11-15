@@ -1,0 +1,1 @@
+Download the train_folder.zip file from https://drive.google.com/file/d/18f__urXzVmEu8lHLLOW_BezyCN-34pPl/view?usp=drive_link, and unzip it into ./Data/

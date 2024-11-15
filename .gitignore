@@ -1,0 +1,4 @@
+# Git Ignore
+Data/train_folder.zip
+Data/train_folder
+Data/train_folder/*/*.png
