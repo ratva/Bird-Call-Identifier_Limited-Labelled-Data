@@ -26,7 +26,8 @@ then
   bal=none
   lr=5e-5
   epoch=25
-  tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/balanced_train_data_type1_2_mean.json
+  # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/balanced_train_data_type1_2_mean.json
+  tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
   lrscheduler_start=10
   lrscheduler_step=5
   lrscheduler_decay=0.5
@@ -36,14 +37,17 @@ else
   bal=bal
   lr=1e-5
   epoch=5
-  tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/whole_train_data.json
+  # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/whole_train_data.json
+  tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
   lrscheduler_start=2
   lrscheduler_step=1
   lrscheduler_decay=0.5
   wa_start=1
   wa_end=5
 fi
-te_data=/data/sls/scratch/yuangong/audioset/datafiles/eval_data.json
+# te_data=/data/sls/scratch/yuangong/audioset/datafiles/eval_data.json
+te_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/test_audio.json
+va_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/val_audio.json
 freqm=48
 timem=192
 mixup=0.5
@@ -70,7 +74,7 @@ fi
 mkdir -p $exp_dir
 
 CUDA_CACHE_DISABLE=1 python -W ignore ../../src/run.py --model ${model} --dataset ${dataset} \
---data-train ${tr_data} --data-val ${te_data} --exp-dir $exp_dir \
+--data-train ${tr_data} --data-val ${va_data} --data-eval ${te_data} --exp-dir $exp_dir \
 --label-csv ./data/class_labels_indices.csv --n_class 527 \
 --lr $lr --n-epochs ${epoch} --batch-size $batch_size --save_model True \
 --freqm $freqm --timem $timem --mixup ${mixup} --bal ${bal} \
