@@ -15,7 +15,9 @@ set -x
 # . /data/sls/scratch/share-201907/slstoolchainrc
 # source ../../venvast/bin/activate
 # export TORCH_HOME=../../pretrained_models
-export TORCH_HOME="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/audioSet-Pretrained/pretrained_models"
+
+pathToCode="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/"
+export TORCH_HOME="${pathToCode}audioSet-Pretrained/pretrained_models"
 
 model=ast
 dataset=audioset
@@ -30,7 +32,7 @@ then
   # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/balanced_train_data_type1_2_mean.json
   # tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
   # tr_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/train_audio.json"
-  tr_data="../../../Data/train_audio.json"
+  tr_data="${pathToCode}Data/train_audio.json"
   lrscheduler_start=10
   lrscheduler_step=5
   lrscheduler_decay=0.5
@@ -43,7 +45,7 @@ else
   # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/whole_train_data.json
   # tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
   # tr_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/train_audio.json"
-  tr_data="../../../Data/train_audio.json"
+  tr_data="${pathToCode}Data/train_audio.json"
   
   lrscheduler_start=2
   lrscheduler_step=1
@@ -57,8 +59,9 @@ fi
 # te_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/test_audio.json"
 # va_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/val_audio.json"
 
-te_data="../../../Data/test_audio.json"
-va_data="../../../Data/val_audio.json"
+te_data="${pathToCode}Data/test_audio.json"
+va_data="${pathToCode}Data/val_audio.json"
+class_indices="${pathToCode}audioSet-Pretrained/egs/audioset/data/bird_class_labels_indices.csv"
 freqm=48
 timem=192
 mixup=0.5
@@ -76,21 +79,23 @@ metrics=mAP
 loss=BCE
 warmup=True
 wa=True
+runPath="${pathToCode}audioSet-Pretrained/src/run.py"
 
 # exp_dir=./exp/test-${set}-f$fstride-t$tstride-p$imagenetpretrain-b$batch_size-lr${lr}-decoupe
-exp_dir=./exp/yeehonk
+exp_dir=./exp/birdclef_audio1
 if [ -d $exp_dir ]; then
   echo 'exp exist'
   exit
 fi
 mkdir -p $exp_dir
 
-CUDA_CACHE_DISABLE=1 python -W ignore ../../src/run.py --model ${model} --dataset ${dataset} \
---data-train ${tr_data} --data-val ${va_data} --data-eval ${te_data} --exp-dir $exp_dir \
---label-csv ./data/class_labels_indices.csv --n_class 527 \
---lr $lr --n-epochs ${epoch} --batch-size $batch_size --save_model True \
---freqm $freqm --timem $timem --mixup ${mixup} --bal ${bal} \
---tstride $tstride --fstride $fstride --imagenet_pretrain $imagenetpretrain \
---dataset_mean ${dataset_mean} --dataset_std ${dataset_std} --audio_length ${audio_length} --noise ${noise} \
---metrics ${metrics} --loss ${loss} --warmup ${warmup} --lrscheduler_start ${lrscheduler_start} --lrscheduler_step ${lrscheduler_step} --lrscheduler_decay ${lrscheduler_decay} \
---wa ${wa} --wa_start ${wa_start} --wa_end ${wa_end}
+# Added debug mode - disable by replacing "python -m debugpy --listen 5678 --wait-for-client" with "python -W ignore"
+CUDA_CACHE_DISABLE=1 python -W ignore "${runPath}" --model "${model}" --dataset "${dataset}" --num-workers 0 \
+--data-train "${tr_data}" --data-val "${va_data}" --data-eval "${te_data}" --exp-dir "${exp_dir}" \
+--label-csv "${class_indices}" --n_class 12 \
+--lr "${lr}" --n-epochs "${epoch}" --batch-size "${batch_size}" --save_model True \
+--freqm "${freqm}" --timem "${timem}" --mixup "${mixup}" --bal "${bal}" \
+--tstride "${tstride}" --fstride "${fstride}" --imagenet_pretrain "${imagenetpretrain}" \
+--dataset_mean "${dataset_mean}" --dataset_std "${dataset_std}" --audio_length "${audio_length}" --noise "${noise}" \
+--metrics "${metrics}" --loss "${loss}" --warmup "${warmup}" --lrscheduler_start "${lrscheduler_start}" --lrscheduler_step "${lrscheduler_step}" --lrscheduler_decay "${lrscheduler_decay}" \
+--wa "${wa}" --wa_start "${wa_start}" --wa_end "${wa_end}"
