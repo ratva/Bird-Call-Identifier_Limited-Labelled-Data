@@ -14,12 +14,15 @@ __pycache__/
 .env
 .env.*
 .secret
+
+# Large files and folders to exclude
 Data/birdclef-2024.zip
 Data/birdclef-2024
-Data/birdclef-2024/train_audio/*/*.ogg
-*.ogg
-*.png
-*.flac
+**/*.ogg
+**/*.png
+**/*.flac
+**/*.pth
+
 Data/spec_images/
 Data/8kHz_spec_images/
 Data/8kHz_spec_images_128mel/
