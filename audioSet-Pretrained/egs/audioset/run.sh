@@ -12,9 +12,10 @@
 
 set -x
 # comment this line if not running on sls cluster
-. /data/sls/scratch/share-201907/slstoolchainrc
-source ../../venvast/bin/activate
-export TORCH_HOME=../../pretrained_models
+# . /data/sls/scratch/share-201907/slstoolchainrc
+# source ../../venvast/bin/activate
+# export TORCH_HOME=../../pretrained_models
+export TORCH_HOME="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/audioSet-Pretrained/pretrained_models"
 
 model=ast
 dataset=audioset
@@ -27,7 +28,9 @@ then
   lr=5e-5
   epoch=25
   # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/balanced_train_data_type1_2_mean.json
-  tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
+  # tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
+  # tr_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/train_audio.json"
+  tr_data="../../../Data/train_audio.json"
   lrscheduler_start=10
   lrscheduler_step=5
   lrscheduler_decay=0.5
@@ -38,7 +41,10 @@ else
   lr=1e-5
   epoch=5
   # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/whole_train_data.json
-  tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
+  # tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
+  # tr_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/train_audio.json"
+  tr_data="../../../Data/train_audio.json"
+  
   lrscheduler_start=2
   lrscheduler_step=1
   lrscheduler_decay=0.5
@@ -46,8 +52,13 @@ else
   wa_end=5
 fi
 # te_data=/data/sls/scratch/yuangong/audioset/datafiles/eval_data.json
-te_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/test_audio.json
-va_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/val_audio.json
+# te_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/test_audio.json
+# va_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/val_audio.json
+# te_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/test_audio.json"
+# va_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/val_audio.json"
+
+te_data="../../../Data/test_audio.json"
+va_data="../../../Data/val_audio.json"
 freqm=48
 timem=192
 mixup=0.5
@@ -66,7 +77,8 @@ loss=BCE
 warmup=True
 wa=True
 
-exp_dir=./exp/test-${set}-f$fstride-t$tstride-p$imagenetpretrain-b$batch_size-lr${lr}-decoupe
+# exp_dir=./exp/test-${set}-f$fstride-t$tstride-p$imagenetpretrain-b$batch_size-lr${lr}-decoupe
+exp_dir=./exp/yeehonk
 if [ -d $exp_dir ]; then
   echo 'exp exist'
   exit
