@@ -8,10 +8,15 @@
 # gen sample weight = sum(label_weight) for label in all labels of the audio clip, where label_weight is the reciprocal of the total sample count of that class.
 # Note audioset is a multi-label dataset
 
+# =====================Run Instructions=====================
+# python "/path/to/this/file/gen_weight_file.py" --data_path "/Path/To/.../Code/Data/val_audio.json"
+
 import argparse
 import json
 import numpy as np
 import sys, os, csv
+
+audioSetPretrainedPath = "/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/audioSet-Pretrained/"
 
 def make_index_dict(label_csv):
     index_lookup = {}
@@ -24,13 +29,16 @@ def make_index_dict(label_csv):
     return index_lookup
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("--data_path", type=str, default='/data/sls/scratch/yuangong/audioset/datafiles/balanced_train_data_type1_2_meanaws2.json', help="the root path of data json file")
+# parser.add_argument("--data_path", type=str, default='/data/sls/scratch/yuangong/audioset/datafiles/balanced_train_data_type1_2_meanaws2.json', help="the root path of data json file")
+parser.add_argument("--data_path", type=str, default=audioSetPretrainedPath + "../Data/train_audio.json", help="the root path of data json file")
+
 
 if __name__ == '__main__':
     args = parser.parse_args()
     data_path = args.data_path
 
-    index_dict = make_index_dict('./data/class_labels_indices.csv')
+    # index_dict = make_index_dict('./data/bird_class_labels_indices.csv')
+    index_dict = make_index_dict(audioSetPretrainedPath + './egs/audioset/data/bird_class_labels_indices.csv')
     label_count = np.zeros(527)
 
     with open(data_path, 'r', encoding='utf8')as fp:
