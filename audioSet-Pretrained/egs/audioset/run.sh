@@ -16,7 +16,8 @@ set -x
 # source ../../venvast/bin/activate
 # export TORCH_HOME=../../pretrained_models
 
-pathToCode="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/"
+# pathToCode="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/"
+pathToCode=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/
 export TORCH_HOME="${pathToCode}audioSet-Pretrained/pretrained_models"
 
 model=ast
@@ -32,7 +33,8 @@ then
   # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/balanced_train_data_type1_2_mean.json
   # tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
   # tr_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/train_audio.json"
-  tr_data="${pathToCode}Data/train_audio.json"
+  # tr_data="${pathToCode}Data/train_audio.json"
+  tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/audioSet-Pretrained/Data/train_audio.json
   lrscheduler_start=10
   lrscheduler_step=5
   lrscheduler_decay=0.5
@@ -45,7 +47,7 @@ else
   # tr_data=/data/sls/scratch/yuangong/aed-pc/src/enhance_label/datafiles_local/whole_train_data.json
   # tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/Data/train_audio.json
   # tr_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/train_audio.json"
-  tr_data="${pathToCode}Data/train_audio.json"
+  tr_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/audioSet-Pretrained/Data/train_audio.json
   
   lrscheduler_start=2
   lrscheduler_step=1
@@ -59,9 +61,9 @@ fi
 # te_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/test_audio.json"
 # va_data="/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/Data/val_audio.json"
 
-te_data="${pathToCode}Data/test_audio.json"
-va_data="${pathToCode}Data/val_audio.json"
-class_indices="${pathToCode}audioSet-Pretrained/egs/audioset/data/bird_class_labels_indices.csv"
+te_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/audioSet-Pretrained/Data/test_audio.json
+va_data=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/audioSet-Pretrained/Data/val_audio.json
+class_indices=/cluster/tufts/cs152l3dclass/nfalic01/Bird-Call-Identifier---Limited-Labelled-Data/audioSet-Pretrained/egs/audioset/data/bird_class_labels_indices.csv
 freqm=48
 timem=192
 mixup=0.5
@@ -69,6 +71,7 @@ mixup=0.5
 fstride=10
 tstride=10
 batch_size=12
+num_workers=16
 
 dataset_mean=-4.2677393
 dataset_std=4.5689974
@@ -90,7 +93,7 @@ fi
 mkdir -p $exp_dir
 
 # Added debug mode - disable by replacing "python -m debugpy --listen 5678 --wait-for-client" with "python -W ignore"
-CUDA_CACHE_DISABLE=1 python -W ignore "${runPath}" --model "${model}" --dataset "${dataset}" --num-workers 0 \
+CUDA_CACHE_DISABLE=1 python -W ignore "${runPath}" --model "${model}" --dataset "${dataset}" -w "${num_workers}" \
 --data-train "${tr_data}" --data-val "${va_data}" --data-eval "${te_data}" --exp-dir "${exp_dir}" \
 --label-csv "${class_indices}" --n_class 12 \
 --lr "${lr}" --n-epochs "${epoch}" --batch-size "${batch_size}" --save_model True \
