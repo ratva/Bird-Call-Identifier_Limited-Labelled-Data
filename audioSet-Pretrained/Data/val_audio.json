@@ -1,0 +1,1644 @@
+{
+    "data": [
+        {
+            "wav": "Data/Audio/greegr/XC292923.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC827289.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC778585.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC305957.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC750125.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC586205.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC494264.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC462840.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC277051.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC703423.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC653808.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC780488.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC764942.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC742428.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC303897.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC761185.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC665915.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC365518.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC606821.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC158762.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC840789.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC149870.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC636717.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC619994.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC738791.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC163087.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC468908.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC640800.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC181249.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC463499.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC750191.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC768624.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC440389.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC781185.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC636840.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC610727.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC485311.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC636191.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC807926.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC113371.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC128632.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC642226.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC270250.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC312496.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC608880.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC671502.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC508604.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC478411.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC569505.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC209194.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC191628.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC764464.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC202530.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC637241.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC824433.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC346154.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC756008.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC515817.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC608163.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC551281.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC769762.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC842816.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC116627.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC336213.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC564753.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC744697.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC598266.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC612966.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC184040.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC826790.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC585613.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC774668.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC371129.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC578263.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC636236.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC718711.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC739192.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC765536.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC814045.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC150107.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC800981.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC829673.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC570277.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC595420.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC151342.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC805701.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC725825.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC590413.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC264040.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC664586.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC482923.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC714556.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC769361.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC627332.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC303710.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC586203.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC181196.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC692060.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC431999.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC534230.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC336032.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC842967.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC643777.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC509427.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC657259.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC755993.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC26899.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC306989.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC578378.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC844547.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC512339.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC606283.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC288738.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC855538.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC376441.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC713926.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC177113.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC196576.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC545304.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC785237.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC495558.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC402366.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC252001.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC253989.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC210240.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC643793.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC546006.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC753208.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC158464.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC585654.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC667428.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC592648.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC773577.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC553015.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC423127.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC637258.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC191929.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC734283.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC794841.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC681734.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC447292.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC19826.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC732497.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC680709.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC182869.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC494691.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC793985.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC686927.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC467834.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC568927.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC741278.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC240330.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC837510.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC566732.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC765124.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC545093.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC364923.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC654212.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC630652.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC428613.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC663531.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC569635.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC786026.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC442763.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC288404.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC782031.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC632961.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC795965.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC854679.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC145803.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC638517.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC561018.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC304461.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC658123.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC490228.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC840073.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC391853.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC138468.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC365511.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC203256.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC840869.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC465765.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC181772.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC701381.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC773307.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC477197.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC447471.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC400948.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC762368.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC398626.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC216923.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC536267.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC155474.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC845723.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC748836.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC560566.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC151394.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC345115.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC739290.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC685149.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC42555.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC552035.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC149210.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC146921.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC382499.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC483674.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC163088.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC298846.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC731042.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC180592.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC823372.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC569430.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC209530.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC702251.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC720887.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC475343.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC541285.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC112486.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC807464.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC182937.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC464761.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC650016.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC580865.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC357715.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC323475.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC309524.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC638748.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC179220.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC362691.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC464292.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC492504.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC466179.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC806046.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC718265.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC181812.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC597334.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC277289.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC207917.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC686199.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC722398.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC855157.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC575234.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC657142.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC843037.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC692713.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC451915.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC779854.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC288078.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC276859.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC583508.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC417434.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC182066.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC116839.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC730923.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC390822.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC580309.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC456479.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC844752.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC720901.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC595499.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC205312.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC582942.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC462902.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC179842.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC553784.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC243449.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC666146.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC116706.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC587974.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC566108.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC145647.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC342529.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC662006.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC535540.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC26902.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC844371.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC844113.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC185001.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC493577.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC724761.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC436465.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC490809.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC720133.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC783536.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC428626.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC631755.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC116618.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC712733.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC489801.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC562674.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC181224.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC611564.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC675865.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC151334.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC432219.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC124689.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC179663.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC484203.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC631190.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC304319.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC384444.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC606439.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC184267.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC725331.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC639935.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC683286.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC413636.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC565811.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC685005.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC815878.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC422335.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC120152.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC492967.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC401201.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC797786.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC150717.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC476546.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC630526.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC646680.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC797448.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC794587.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC584632.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC519915.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC470413.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC606430.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC728940.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC585174.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC394872.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC277475.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC799810.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC806754.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC747042.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC696314.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC658584.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC801408.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC306987.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC573523.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC283346.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC644263.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC584151.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC212847.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC711449.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC654565.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC726227.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC608171.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC257308.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC602402.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC665088.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC563328.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC835572.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC437424.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC595225.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC744928.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC372847.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC658806.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC696972.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC678619.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC592951.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC322360.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC377324.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC310414.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC385139.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC445758.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC818936.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC683627.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC803474.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC545468.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC209349.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC718523.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC438368.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC148833.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC723251.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC202074.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC184815.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/whbwat1/XC788134.ogg",
+            "labels": "White-breasted Waterhen"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC649642.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC469908.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC571938.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC559526.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC715605.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC775131.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC808760.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC834502.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC758315.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC665601.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC743681.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/grtdro1/XC576678.ogg",
+            "labels": "Greater Racket-tailed Drongo"
+        },
+        {
+            "wav": "Data/Audio/blrwar1/XC770067.ogg",
+            "labels": "Blyth's Reed Warbler"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC180639.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC673087.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC246717.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/greegr/XC681080.ogg",
+            "labels": "Great Egret"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC591649.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC432996.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/rewbul/XC291896.ogg",
+            "labels": "Red-whiskered Bulbul"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC147857.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC421505.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC554431.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/litegr/XC839167.ogg",
+            "labels": "Little Egret"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC603061.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC654331.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/bcnher/XC713290.ogg",
+            "labels": "Black-crowned Night-Heron"
+        },
+        {
+            "wav": "Data/Audio/gyhcaf1/XC440109.ogg",
+            "labels": "Gray-headed Canary-Flycatcher"
+        },
+        {
+            "wav": "Data/Audio/eurcoo/XC746497.ogg",
+            "labels": "Eurasian Coot"
+        },
+        {
+            "wav": "Data/Audio/grewar3/XC786583.ogg",
+            "labels": "Greenish Warbler"
+        },
+        {
+            "wav": "Data/Audio/rorpar/XC656950.ogg",
+            "labels": "Rose-ringed Parakeet"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC570013.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC607949.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC603671.ogg",
+            "labels": "Gray Heron"
+        },
+        {
+            "wav": "Data/Audio/graher1/XC378737.ogg",
+            "labels": "Gray Heron"
+        }
+    ]
+}
