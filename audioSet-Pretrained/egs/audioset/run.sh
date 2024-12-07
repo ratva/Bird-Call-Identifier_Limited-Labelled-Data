@@ -82,7 +82,7 @@ wa=True
 runPath="${pathToCode}audioSet-Pretrained/src/run.py"
 
 # exp_dir=./exp/test-${set}-f$fstride-t$tstride-p$imagenetpretrain-b$batch_size-lr${lr}-decoupe
-exp_dir=./exp/birdclef_audio1
+exp_dir=./exp/birdclef_audio2
 if [ -d $exp_dir ]; then
   echo 'exp exist'
   exit
