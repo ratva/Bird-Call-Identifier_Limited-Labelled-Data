@@ -29,3 +29,5 @@ Data/8kHz_spec_images/
 Data/8kHz_spec_images_128mel/
 Spectrogram Generation/8kHz_folder.zip
 
+exp/*
+

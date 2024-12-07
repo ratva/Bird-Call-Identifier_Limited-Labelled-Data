@@ -16,8 +16,11 @@ from torch import nn
 import numpy as np
 import pickle
 from torch.cuda.amp import autocast,GradScaler
+from torch.utils.tensorboard import SummaryWriter
 
-def train(audio_model, train_loader, test_loader, args):
+def train(audio_model, train_loader, val_loader, args):
+    print("Summary writer initialized")
+    writer = SummaryWriter()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print('running on ' + str(device))
     torch.set_grad_enabled(True)
@@ -93,7 +96,7 @@ def train(audio_model, train_loader, test_loader, args):
     epoch += 1
     # for amp
     scaler = GradScaler()
-
+    
     print("current #steps=%s, #epochs=%s" % (global_step, epoch))
     print("start training...")
     result = np.zeros([args.n_epochs, 10])
@@ -105,6 +108,9 @@ def train(audio_model, train_loader, test_loader, args):
         print('---------------')
         print(datetime.datetime.now())
         print("current #epochs=%s, #steps=%s" % (epoch, global_step))
+
+        train_running_loss = 0
+        train_num_batches = len(train_loader)
 
         for i, (audio_input, labels) in enumerate(train_loader):
 
@@ -141,6 +147,7 @@ def train(audio_model, train_loader, test_loader, args):
             scaler.step(optimizer)
             scaler.update()
 
+            train_running_loss += loss.item()
             # record loss
             loss_meter.update(loss.item(), B)
             batch_time.update(time.time() - end_time)
@@ -166,9 +173,14 @@ def train(audio_model, train_loader, test_loader, args):
             end_time = time.time()
             global_step += 1
 
-        print('start validation')
-        stats, valid_loss = validate(audio_model, test_loader, args, epoch)
+        train_loss = train_running_loss/train_num_batches
+        writer.add_scalar('Loss/train', train_loss, epoch)
+        writer.add_scalar('AvgLoss/train', loss_meter.avg, epoch)
 
+        print('start validation')
+        stats, valid_loss = validate(audio_model, val_loader, args, epoch)
+        
+        writer.add_scalar("Loss/val", valid_loss, epoch)
         # ensemble results
         cum_stats = validate_ensemble(args, epoch)
         cum_mAP = np.mean([stat['AP'] for stat in cum_stats])
@@ -178,11 +190,18 @@ def train(audio_model, train_loader, test_loader, args):
         mAP = np.mean([stat['AP'] for stat in stats])
         mAUC = np.mean([stat['auc'] for stat in stats])
         acc = stats[0]['acc']
+        writer.add_scalar("Accuracy/val", acc, epoch)
+        writer.add_scalar("mAP/val", mAP, epoch)
+        writer.add_scalar("mAUC/val", mAUC, epoch)
+        writer.add_scalar("d_prime", d_prime(mAUC), epoch)
 
         middle_ps = [stat['precisions'][int(len(stat['precisions'])/2)] for stat in stats]
         middle_rs = [stat['recalls'][int(len(stat['recalls'])/2)] for stat in stats]
         average_precision = np.mean(middle_ps)
         average_recall = np.mean(middle_rs)
+
+        writer.add_scalar("avg_precision", average_precision, epoch)
+        writer.add_scalar("avg_recall", average_recall, epoch)
 
         if main_metrics == 'mAP':
             print("mAP: {:.6f}".format(mAP))
@@ -217,20 +236,24 @@ def train(audio_model, train_loader, test_loader, args):
             best_cum_mAP = cum_mAP
 
         if best_epoch == epoch:
+            model_dir = "%s/models" % (exp_dir)
+            if not os.path.exists(model_dir):
+                os.makedirs(model_dir)
+            # breakpoint()
             torch.save(audio_model.state_dict(), "%s/models/best_audio_model.pth" % (exp_dir))
-            torch.save(optimizer.state_dict(), "%s/models/best_optim_state.pth" % (exp_dir))
+            torch.save(optimizer.state_dict(), "%s/models/best_optim_state.pt" % (exp_dir))
 
-        torch.save(audio_model.state_dict(), "%s/models/audio_model.%d.pth" % (exp_dir, epoch))
-        if len(train_loader.dataset) > 2e5:
-            torch.save(optimizer.state_dict(), "%s/models/optim_state.%d.pth" % (exp_dir, epoch))
+        # torch.save(audio_model.state_dict(), "%s/models/audio_model.%d.pth" % (exp_dir, epoch))
+        # if len(train_loader.dataset) > 2e5:
+        #     torch.save(optimizer.state_dict(), "%s/models/optim_state.%d.pth" % (exp_dir, epoch))
 
         scheduler.step()
 
         print('Epoch-{0} lr: {1}'.format(epoch, optimizer.param_groups[0]['lr']))
 
-        with open(exp_dir + '/stats_' + str(epoch) +'.pickle', 'wb') as handle:
-            pickle.dump(stats, handle, protocol=pickle.HIGHEST_PROTOCOL)
-        _save_progress()
+        # with open(exp_dir + '/stats_' + str(epoch) +'.pickle', 'wb') as handle:
+        #     pickle.dump(stats, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        # _save_progress()
 
         finish_time = time.time()
         print('epoch {:d} training time: {:.3f}'.format(epoch, finish_time-begin_time))
@@ -243,31 +266,32 @@ def train(audio_model, train_loader, test_loader, args):
         per_sample_data_time.reset()
         loss_meter.reset()
         per_sample_dnn_time.reset()
+    writer.close()
 
     # if args.dataset == 'audioset':
     #     if len(train_loader.dataset) > 2e5:
     #         stats=validate_wa(audio_model, test_loader, args, 1, 5)
     #     else:
     #         stats=validate_wa(audio_model, test_loader, args, 6, 25)
-    if args.wa == True:
-        stats = validate_wa(audio_model, test_loader, args, args.wa_start, args.wa_end)
-        mAP = np.mean([stat['AP'] for stat in stats])
-        mAUC = np.mean([stat['auc'] for stat in stats])
-        middle_ps = [stat['precisions'][int(len(stat['precisions'])/2)] for stat in stats]
-        middle_rs = [stat['recalls'][int(len(stat['recalls'])/2)] for stat in stats]
-        average_precision = np.mean(middle_ps)
-        average_recall = np.mean(middle_rs)
-        wa_result = [mAP, mAUC, average_precision, average_recall, d_prime(mAUC)]
-        print('---------------Training Finished---------------')
-        print('weighted averaged model results')
-        print("mAP: {:.6f}".format(mAP))
-        print("AUC: {:.6f}".format(mAUC))
-        print("Avg Precision: {:.6f}".format(average_precision))
-        print("Avg Recall: {:.6f}".format(average_recall))
-        print("d_prime: {:.6f}".format(d_prime(mAUC)))
-        print("train_loss: {:.6f}".format(loss_meter.avg))
-        print("valid_loss: {:.6f}".format(valid_loss))
-        np.savetxt(exp_dir + '/wa_result.csv', wa_result)
+    # if args.wa == True:
+    #     stats = validate_wa(audio_model, val_loader, args, args.wa_start, args.wa_end)
+    #     mAP = np.mean([stat['AP'] for stat in stats])
+    #     mAUC = np.mean([stat['auc'] for stat in stats])
+    #     middle_ps = [stat['precisions'][int(len(stat['precisions'])/2)] for stat in stats]
+    #     middle_rs = [stat['recalls'][int(len(stat['recalls'])/2)] for stat in stats]
+    #     average_precision = np.mean(middle_ps)
+    #     average_recall = np.mean(middle_rs)
+    #     wa_result = [mAP, mAUC, average_precision, average_recall, d_prime(mAUC)]
+    #     print('---------------Training Finished---------------')
+    #     print('weighted averaged model results')
+    #     print("mAP: {:.6f}".format(mAP))
+    #     print("AUC: {:.6f}".format(mAUC))
+    #     print("Avg Precision: {:.6f}".format(average_precision))
+    #     print("Avg Recall: {:.6f}".format(average_recall))
+    #     print("d_prime: {:.6f}".format(d_prime(mAUC)))
+    #     print("train_loss: {:.6f}".format(loss_meter.avg))
+    #     print("valid_loss: {:.6f}".format(valid_loss))
+    #     np.savetxt(exp_dir + '/wa_result.csv', wa_result)
 
 def validate(audio_model, val_loader, args, epoch):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
