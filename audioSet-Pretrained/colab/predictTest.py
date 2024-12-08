@@ -19,7 +19,7 @@ modelName = 'best_audio_model.pth'
  
 te_data = f"{home_dir}Data/test_audio_nfalic01.json"
 
-run_name = "test"
+run_name = "test_25"
 # =======================================================
 
 model_path = f"{home_dir}exp/{modelDirSubPath}models/{modelName}"
@@ -230,7 +230,6 @@ df = pd.DataFrame(stats, index=class_names)
 
 # Print the DataFrame as a table
 print(df)
-print(stats)
 
 # Save the DataFrame to a CSV file
 df.to_csv(predictionsDir + '/stats_output_' + str(run_name) + '.csv', index=True)
@@ -299,7 +298,7 @@ plt.xticks(ticks=np.arange(len(class_names)) + 0.5, labels=class_names, rotation
 plt.tight_layout()  # Adjust the padding to make sure everything fits
 
 # Save the figure
-plt.savefig(predictionsDir + '/test_confusion_matrix_' + str(run_name) + '.png')
+plt.savefig(predictionsDir + '/confusion_matrix_' + str(run_name) + '.png')
 
 # Show the plot
 # plt.show()
