@@ -6,10 +6,20 @@ import datetime
 import time
 import torch
 from torch import nn
+import torchaudio
 import numpy as np
 import pickle
 from torch.cuda.amp import autocast,GradScaler
 import matplotlib.pyplot as plt
+import soundfile
+
+# Add the src directory to the Python path
+src_dir = os.path.abspath("/cluster/tufts/cs152l3dclass/arekhi01/Bird-Call-Identifier---Limited-Labelled-Data/audioSet-Pretrained/src")
+if src_dir not in sys.path:
+    sys.path.append(src_dir)
+sys.path.insert(0, "src/utilities")
+sys.path.insert(0, "src/models")
+
 import dataloader
 import models
 from utilities import *
@@ -18,22 +28,15 @@ import numpy as np
 from scipy import stats
 import torch
 from src.models import ASTModel
-
-# Add the src directory to the Python path
-# src_dir = os.path.abspath("/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/audioSet-Pretrained/src")
-# if src_dir not in sys.path:
-#     sys.path.append(src_dir)
-sys.path.insert(0, "/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/audioSet-Pretrained/src/utilities")
-
 from stats import calculate_stats
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
+import pandas as pd
 
+exp_dir = "exp/birdclef_audio25"
 
-exp_dir = "/Users/avtar/Library/CloudStorage/OneDrive-Tufts/Tufts CS/CS152 L3D/Project/Code/exp/birdclef_audio1"
-
-epoch = "wa"
-target = np.loadtxt(exp_dir+'/predictions/target.csv', delimiter=',')
+epoch = "test_audio"
+target = np.loadtxt(exp_dir+'/predictions/test_target.csv', delimiter=',')
 audio_output = np.loadtxt(exp_dir+'/predictions/predictions_' + str(epoch) + '.csv', delimiter=',')
 
 
@@ -43,6 +46,9 @@ statsOut = calculate_stats(audio_output, target)
 true_classes = []
 pred_classes = []
 
+correct_labels = 0
+incorrect_labels = 0
+
 for idx in range(0, len(target)):
     trueClass = np.argmax(target[idx])
     predClass = np.argmax(audio_output[idx])
@@ -50,6 +56,15 @@ for idx in range(0, len(target)):
     # Append true and predicted classes to the lists
     true_classes.append(trueClass)
     pred_classes.append(predClass)
+    if trueClass != predClass:
+        # print(f"True class: {trueClass}, Predicted class: {predClass}")
+        incorrect_labels += 1
+    else:
+        # print(f"Correctly predicted class: {trueClass}")
+        correct_labels += 1
+
+print(f"Correctly predicted labels: {correct_labels}")
+print(f"Incorrectly predicted labels: {incorrect_labels}")
 
 # After the loop, calculate the confusion matrix
 conf_matrix = confusion_matrix(true_classes, pred_classes, normalize='true')
@@ -68,6 +83,15 @@ class_names = [
     "Gray Heron",
     "White-breasted Waterhen"
 ]
+
+# Convert statsOut to a DataFrame for better readability
+df = pd.DataFrame(statsOut, index=class_names)
+
+# Print the DataFrame as a table
+print(df)
+
+# Save the DataFrame to a CSV file
+df.to_csv(exp_dir + '/predictions/stats_output_' + str(epoch) + '.csv', index=True)
 
 # Plot the confusion matrix
 plt.figure(figsize=(12, 10))
@@ -176,37 +200,37 @@ def load_label(label_csv):
 #     batch_size=100, shuffle=False, num_workers=16, pin_memory=True)
 
 
-feats = make_features('../sample_audios/sample_audio.flac', mel_bins=128)   
+# feats = make_features('../sample_audios/sample_audio.flac', mel_bins=128)   
 
 
-stats, _ = validate(audio_model, eval_loader, args, model_idx)
-mAP = np.mean([stat['AP'] for stat in stats])
-mAUC = np.mean([stat['auc'] for stat in stats])
-dprime = d_prime(mAUC)
-ensemble_res[model_idx, :] = [mAP, mAUC, dprime]
-print("Model {:d} {:s} mAP: {:.6f}, AUC: {:.6f}, d-prime: {:.6f}".format(model_idx, mdl, mAP, mAUC, dprime))
+# stats, _ = validate(audio_model, eval_loader, args, model_idx)
+# mAP = np.mean([stat['AP'] for stat in stats])
+# mAUC = np.mean([stat['auc'] for stat in stats])
+# dprime = d_prime(mAUC)
+# ensemble_res[model_idx, :] = [mAP, mAUC, dprime]
+# print("Model {:d} {:s} mAP: {:.6f}, AUC: {:.6f}, d-prime: {:.6f}".format(model_idx, mdl, mAP, mAUC, dprime))
 
-input_tdim = 1024
-checkpoint_path = '../pretrained_models/audio_mdl.pth'
-# now load the visualization model
-ast_mdl = ASTModelVis(label_dim=12, input_tdim=input_tdim, imagenet_pretrain=True, audioset_pretrain=False)
-print(f'[*INFO] load checkpoint: {checkpoint_path}')
-checkpoint = torch.load(checkpoint_path, map_location=torch.device('mps'))
-audio_model = torch.nn.DataParallel(ast_mdl, device_ids=[0])
-audio_model.load_state_dict(checkpoint)
-audio_model = audio_model.to(torch.device("mps"))
-audio_model.eval()     
+# input_tdim = 1024
+# checkpoint_path = '../pretrained_models/audio_mdl.pth'
+# # now load the visualization model
+# ast_mdl = ASTModelVis(label_dim=12, input_tdim=input_tdim, imagenet_pretrain=True, audioset_pretrain=False)
+# print(f'[*INFO] load checkpoint: {checkpoint_path}')
+# checkpoint = torch.load(checkpoint_path, map_location=torch.device('mps'))
+# audio_model = torch.nn.DataParallel(ast_mdl, device_ids=[0])
+# audio_model.load_state_dict(checkpoint)
+# audio_model = audio_model.to(torch.device("mps"))
+# audio_model.eval()     
 
-with torch.no_grad():
-  with autocast():
-    output = audio_model.forward(feats_data)
-    output = torch.sigmoid(output)
-result_output = output.data.cpu().numpy()[0]
-sorted_indexes = np.argsort(result_output)[::-1]
+# with torch.no_grad():
+#   with autocast():
+#     output = audio_model.forward(feats_data)
+#     output = torch.sigmoid(output)
+# result_output = output.data.cpu().numpy()[0]
+# sorted_indexes = np.argsort(result_output)[::-1]
 
-# Print audio tagging top probabilities
-print('Predice results:')
-for k in range(10):
-    print('- {}: {:.4f}'.format(np.array(labels)[sorted_indexes[k]], result_output[sorted_indexes[k]]))
-print('Listen to this sample: ')
-IPython.display.Audio('../sample_audios/sample_audio.flac')
+# # Print audio tagging top probabilities
+# print('Predice results:')
+# for k in range(10):
+#     print('- {}: {:.4f}'.format(np.array(labels)[sorted_indexes[k]], result_output[sorted_indexes[k]]))
+# print('Listen to this sample: ')
+# IPython.display.Audio('../sample_audios/sample_audio.flac')
