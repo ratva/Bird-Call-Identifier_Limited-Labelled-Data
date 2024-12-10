@@ -16,13 +16,12 @@ home_dir = '/cluster/tufts/cs152l3dclass/arekhi01/Bird-Call-Identifier---Limited
 
 modelDirSubPath = 'birdclef_audio25/'
 modelName = 'best_audio_model.pth'
- 
+model_path = f"{home_dir}exp/{modelDirSubPath}models/{modelName}"
+
 te_data = f"{home_dir}Data/test_audio_nfalic01.json"
 
 run_name = "test_25"
 # =======================================================
-
-model_path = f"{home_dir}exp/{modelDirSubPath}models/{modelName}"
 
 sys.path.insert(0, f"{home_dir}src/")
 sys.path.append('../')
