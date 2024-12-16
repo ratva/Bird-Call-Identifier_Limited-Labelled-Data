@@ -1,0 +1,875 @@
++ source /cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/activate
+++ _CONDA_ROOT=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406
+++ . /cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/etc/profile.d/conda.sh
++++ export CONDA_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda
++++ CONDA_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/python
++++ CONDA_PYTHON_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/condabin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/home/ashen05/.local/bin:/cluster/home/ashen05/bin:/cluster/home/ashen05/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_1='\''/cluster/home/ashen05/.conda/envs/myenv'\''
+export CONDA_EXE='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/python'\''
+. "/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/etc/conda/activate.d/libglib_activate.sh"'
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/condabin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/home/ashen05/.local/bin:/cluster/home/ashen05/bin:/cluster/home/ashen05/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_1='\''/cluster/home/ashen05/.conda/envs/myenv'\''
+export CONDA_EXE='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/python'\''
+. "/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/etc/conda/activate.d/libglib_activate.sh"'
++++ PS1='(base) '
++++ export PATH=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/condabin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/home/ashen05/.local/bin:/cluster/home/ashen05/bin:/cluster/home/ashen05/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ PATH=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/condabin:/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin:/cluster/home/ashen05/.local/bin:/cluster/home/ashen05/bin:/cluster/home/ashen05/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ export CONDA_PREFIX=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406
++++ CONDA_PREFIX=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406
++++ export CONDA_SHLVL=2
++++ CONDA_SHLVL=2
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_1=/cluster/home/ashen05/.conda/envs/myenv
++++ CONDA_PREFIX_1=/cluster/home/ashen05/.conda/envs/myenv
++++ export CONDA_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda
++++ CONDA_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/python
++++ CONDA_PYTHON_EXE=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/bin/python
++++ . /cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+++++ export GSETTINGS_SCHEMA_DIR=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/cluster/tufts/hpc/apps/rhel8/external/apps/anaconda/202406/share/glib-2.0/schemas
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ export TORCH_HOME=../../pretrained_models
++ TORCH_HOME=../../pretrained_models
++ mkdir -p ./exp
++ '[' -e SSAST-Base-Patch-400.pth ']'
++ echo 'pretrained model already downloaded.'
+pretrained model already downloaded.
++ pretrain_exp=
++ pretrain_model=SSAST-Base-Patch-400
++ pretrain_path=.//SSAST-Base-Patch-400.pth
++ dataset=birdclef
++ set=balanced
++ dataset_mean=-4.2677393
++ dataset_std=4.5689974
++ target_length=1024
++ noise=False
++ task=ft_avgtok
++ model_size=base
++ head_lr=1
++ warmup=True
++ last_layer_finetuning=False
++ lr_decay=0.1
++ '[' balanced == balanced ']'
++ bal=none
++ lr=5e-4
++ epoch=50
++ tr_data=/cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/Data/train_audio.json
++ te_data=/cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/Data/test_audio.json
++ va_data=/cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/Data/val_audio.json
++ freqm=48
++ timem=192
++ mixup=0.5
++ fstride=10
++ tstride=10
++ fshape=16
++ tshape=16
++ batch_size=12
++ exp_dir=./exp/SSAST-50epochs-lr5e-4-lastlayerftFalse-decay0.1
++ class_indices=/cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/data/birdclef_class_labels.csv
++ CUDA_CACHE_DISABLE=1
++ python -W ignore ../../run.py --dataset birdclef --data-train /cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/Data/train_audio.json --data-val /cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/Data/val_audio.json --data-eval /cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/Data/test_audio.json --exp-dir ./exp/SSAST-50epochs-lr5e-4-lastlayerftFalse-decay0.1 --label-csv /cluster/tufts/cs152l3dclass/ashen05/ssast/src/finetune/audioset/data/birdclef_class_labels.csv --n_class 12 --lr 5e-4 --n-epochs 50 --batch-size 12 --save_model False --freqm 48 --timem 192 --mixup 0.5 --bal none --tstride 10 --fstride 10 --fshape 16 --tshape 16 --warmup False --task ft_avgtok --model_size base --adaptschedule False --pretrained_mdl_path .//SSAST-Base-Patch-400.pth --dataset_mean -4.2677393 --dataset_std 4.5689974 --target_length 1024 --num_mel_bins 128 --head_lr 1 --noise False --lrscheduler_start 10 --lrscheduler_step 5 --lrscheduler_decay 0.1 --wa True --wa_start 6 --wa_end 25 --loss BCE --metrics mAP --last_layer_ft False
+2024-12-09 12:09:30.778950: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-09 12:09:30.793295: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1733764170.810804  262095 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1733764170.816067  262095 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-12-09 12:09:30.837764: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I am process 262095, running on p1cmp077.pax.tufts.edu: starting (Mon Dec  9 12:09:38 2024)
+balanced sampler is not used
+---------------the train dataloader---------------
+now using following mask: 48 freq, 192 time
+now using mix-up with rate 0.500000
+now process birdclef
+now skip normalization (use it ONLY when you are computing the normalization stats).
+number of classes is 12
+---------------the evaluation dataloader---------------
+now using following mask: 0 freq, 0 time
+now using mix-up with rate 0.000000
+now process birdclef
+now skip normalization (use it ONLY when you are computing the normalization stats).
+number of classes is 12
+Now train with birdclef with 1432 training samples, evaluate with 410 samples
+now load a SSL pretrained models from .//SSAST-Base-Patch-400.pth
+pretraining patch split stride: frequency=16, time=16
+pretraining patch shape: frequency=16, time=16
+pretraining patch array dimension: frequency=8, time=64
+pretraining number of patches=512
+fine-tuning patch split stride: frequncey=10, time=10
+fine-tuning number of patches=1212
+
+Creating experiment directory: ./exp/SSAST-50epochs-lr5e-4-lastlayerftFalse-decay0.1
+Now starting fine-tuning for 50 epochs
+Summary writer initialized
+running on cuda
+Total parameter number is : 87.736 million
+Total trainable parameter number is : 87.736 million
+The mlp header uses 1 x larger lr
+Total mlp parameter number is : 0.011 million
+Total base parameter number is : 87.725 million
+now training with birdclef, main metrics: mAP, loss function: BCEWithLogitsLoss(), learning rate scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x2afd01550260>
+The learning rate scheduler starts at 10 epoch with decay rate of 0.100 every 5 epoches
+current #steps=0, #epochs=1
+start training...
+---------------
+2024-12-09 12:09:39.876876
+current #epochs=1, #steps=0
+Epoch: [1][100/119]	Per Sample Total Time 0.33270	Per Sample Data Time 0.23410	Per Sample DNN Time 0.09860	Train Loss 0.2951	
+start validation
+mAP: 0.172792
+AUC: 0.644259
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.523072
+train_loss: 0.293387
+valid_loss: 0.728857
+validation finished
+normal learning rate scheduler step
+Epoch-1 lr: 0.0005
+Epoch-1 lr: 0.0005
+epoch 1 training time: 538.193
+---------------
+2024-12-09 12:18:38.070390
+current #epochs=2, #steps=119
+Epoch: [2][81/119]	Per Sample Total Time 0.32657	Per Sample Data Time 0.22784	Per Sample DNN Time 0.09872	Train Loss 0.2837	
+start validation
+mAP: 0.189838
+AUC: 0.659312
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.580658
+train_loss: 0.284771
+valid_loss: 0.730245
+validation finished
+normal learning rate scheduler step
+Epoch-2 lr: 0.0005
+Epoch-2 lr: 0.0005
+epoch 2 training time: 533.520
+---------------
+2024-12-09 12:27:31.590228
+current #epochs=3, #steps=238
+Epoch: [3][62/119]	Per Sample Total Time 0.32955	Per Sample Data Time 0.23105	Per Sample DNN Time 0.09851	Train Loss 0.2820	
+start validation
+mAP: 0.193199
+AUC: 0.681359
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.666805
+train_loss: 0.281034
+valid_loss: 0.725101
+validation finished
+normal learning rate scheduler step
+Epoch-3 lr: 0.0005
+Epoch-3 lr: 0.0005
+epoch 3 training time: 542.855
+---------------
+2024-12-09 12:36:34.444737
+current #epochs=4, #steps=357
+Epoch: [4][43/119]	Per Sample Total Time 0.33610	Per Sample Data Time 0.23736	Per Sample DNN Time 0.09873	Train Loss 0.2817	
+start validation
+mAP: 0.185209
+AUC: 0.695075
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.721655
+train_loss: 0.280219
+valid_loss: 0.726415
+validation finished
+normal learning rate scheduler step
+Epoch-4 lr: 0.0005
+Epoch-4 lr: 0.0005
+epoch 4 training time: 539.332
+---------------
+2024-12-09 12:45:33.776380
+current #epochs=5, #steps=476
+Epoch: [5][24/119]	Per Sample Total Time 0.26238	Per Sample Data Time 0.16360	Per Sample DNN Time 0.09878	Train Loss 0.2750	
+start validation
+mAP: 0.188939
+AUC: 0.698915
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.737206
+train_loss: 0.276884
+valid_loss: 0.727916
+validation finished
+normal learning rate scheduler step
+Epoch-5 lr: 0.0005
+Epoch-5 lr: 0.0005
+epoch 5 training time: 546.052
+---------------
+2024-12-09 12:54:39.828494
+current #epochs=6, #steps=595
+Epoch: [6][5/119]	Per Sample Total Time 0.55846	Per Sample Data Time 0.45990	Per Sample DNN Time 0.09856	Train Loss 0.2722	
+Epoch: [6][105/119]	Per Sample Total Time 0.33767	Per Sample Data Time 0.23883	Per Sample DNN Time 0.09884	Train Loss 0.2757	
+start validation
+mAP: 0.202996
+AUC: 0.714864
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.802779
+train_loss: 0.275633
+valid_loss: 0.726099
+validation finished
+normal learning rate scheduler step
+Epoch-6 lr: 0.0005
+Epoch-6 lr: 0.0005
+epoch 6 training time: 555.204
+---------------
+2024-12-09 13:03:55.032450
+current #epochs=7, #steps=714
+Epoch: [7][86/119]	Per Sample Total Time 0.35516	Per Sample Data Time 0.25645	Per Sample DNN Time 0.09870	Train Loss 0.2769	
+start validation
+mAP: 0.229453
+AUC: 0.739470
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.907520
+train_loss: 0.276281
+valid_loss: 0.725653
+validation finished
+normal learning rate scheduler step
+Epoch-7 lr: 0.0005
+Epoch-7 lr: 0.0005
+epoch 7 training time: 543.565
+---------------
+2024-12-09 13:12:58.597642
+current #epochs=8, #steps=833
+Epoch: [8][67/119]	Per Sample Total Time 0.28890	Per Sample Data Time 0.18981	Per Sample DNN Time 0.09909	Train Loss 0.2720	
+start validation
+mAP: 0.258442
+AUC: 0.762479
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.010174
+train_loss: 0.272617
+valid_loss: 0.726709
+validation finished
+normal learning rate scheduler step
+Epoch-8 lr: 0.0005
+Epoch-8 lr: 0.0005
+epoch 8 training time: 547.994
+---------------
+2024-12-09 13:22:06.591872
+current #epochs=9, #steps=952
+Epoch: [9][48/119]	Per Sample Total Time 0.32149	Per Sample Data Time 0.22267	Per Sample DNN Time 0.09882	Train Loss 0.2741	
+start validation
+mAP: 0.243224
+AUC: 0.754983
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 0.976168
+train_loss: 0.270509
+valid_loss: 0.726867
+validation finished
+normal learning rate scheduler step
+Epoch-9 lr: 0.0005
+Epoch-9 lr: 0.0005
+epoch 9 training time: 565.054
+---------------
+2024-12-09 13:31:31.646268
+current #epochs=10, #steps=1071
+Epoch: [10][29/119]	Per Sample Total Time 0.38473	Per Sample Data Time 0.28595	Per Sample DNN Time 0.09877	Train Loss 0.2719	
+start validation
+mAP: 0.300592
+AUC: 0.782236
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.102758
+train_loss: 0.271186
+valid_loss: 0.724130
+validation finished
+normal learning rate scheduler step
+Epoch-10 lr: 5e-05
+Epoch-10 lr: 5e-05
+epoch 10 training time: 557.060
+---------------
+2024-12-09 13:40:48.706286
+current #epochs=11, #steps=1190
+Epoch: [11][10/119]	Per Sample Total Time 0.26644	Per Sample Data Time 0.16762	Per Sample DNN Time 0.09882	Train Loss 0.2697	
+Epoch: [11][110/119]	Per Sample Total Time 0.34049	Per Sample Data Time 0.24141	Per Sample DNN Time 0.09908	Train Loss 0.2642	
+start validation
+mAP: 0.303755
+AUC: 0.791773
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.149174
+train_loss: 0.263862
+valid_loss: 0.723184
+validation finished
+normal learning rate scheduler step
+Epoch-11 lr: 5e-05
+Epoch-11 lr: 5e-05
+epoch 11 training time: 560.394
+---------------
+2024-12-09 13:50:09.100158
+current #epochs=12, #steps=1309
+Epoch: [12][91/119]	Per Sample Total Time 0.30695	Per Sample Data Time 0.20783	Per Sample DNN Time 0.09912	Train Loss 0.2602	
+start validation
+mAP: 0.307099
+AUC: 0.796176
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.171025
+train_loss: 0.259863
+valid_loss: 0.722581
+validation finished
+normal learning rate scheduler step
+Epoch-12 lr: 5e-05
+Epoch-12 lr: 5e-05
+epoch 12 training time: 547.197
+---------------
+2024-12-09 13:59:16.297391
+current #epochs=13, #steps=1428
+Epoch: [13][72/119]	Per Sample Total Time 0.35484	Per Sample Data Time 0.25583	Per Sample DNN Time 0.09901	Train Loss 0.2562	
+start validation
+mAP: 0.316198
+AUC: 0.801602
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.198344
+train_loss: 0.256896
+valid_loss: 0.721545
+validation finished
+normal learning rate scheduler step
+Epoch-13 lr: 5e-05
+Epoch-13 lr: 5e-05
+epoch 13 training time: 557.191
+---------------
+2024-12-09 14:08:33.488656
+current #epochs=14, #steps=1547
+Epoch: [14][53/119]	Per Sample Total Time 0.34419	Per Sample Data Time 0.24507	Per Sample DNN Time 0.09912	Train Loss 0.2596	
+start validation
+mAP: 0.315460
+AUC: 0.803179
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.206369
+train_loss: 0.257018
+valid_loss: 0.721902
+validation finished
+normal learning rate scheduler step
+Epoch-14 lr: 5e-05
+Epoch-14 lr: 5e-05
+epoch 14 training time: 564.390
+---------------
+2024-12-09 14:17:57.878134
+current #epochs=15, #steps=1666
+Epoch: [15][34/119]	Per Sample Total Time 0.37136	Per Sample Data Time 0.27227	Per Sample DNN Time 0.09909	Train Loss 0.2603	
+start validation
+mAP: 0.311177
+AUC: 0.806427
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.223020
+train_loss: 0.257456
+valid_loss: 0.721287
+validation finished
+normal learning rate scheduler step
+Epoch-15 lr: 5e-06
+Epoch-15 lr: 5e-06
+epoch 15 training time: 551.209
+---------------
+2024-12-09 14:27:09.086937
+current #epochs=16, #steps=1785
+Epoch: [16][15/119]	Per Sample Total Time 0.27939	Per Sample Data Time 0.18065	Per Sample DNN Time 0.09874	Train Loss 0.2581	
+Epoch: [16][115/119]	Per Sample Total Time 0.33716	Per Sample Data Time 0.23803	Per Sample DNN Time 0.09913	Train Loss 0.2520	
+start validation
+mAP: 0.315256
+AUC: 0.806988
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.225912
+train_loss: 0.252524
+valid_loss: 0.721674
+validation finished
+normal learning rate scheduler step
+Epoch-16 lr: 5e-06
+Epoch-16 lr: 5e-06
+epoch 16 training time: 550.372
+---------------
+2024-12-09 14:36:19.459235
+current #epochs=17, #steps=1904
+Epoch: [17][96/119]	Per Sample Total Time 0.34235	Per Sample Data Time 0.24321	Per Sample DNN Time 0.09914	Train Loss 0.2535	
+start validation
+mAP: 0.316155
+AUC: 0.808295
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.232669
+train_loss: 0.253471
+valid_loss: 0.721166
+validation finished
+normal learning rate scheduler step
+Epoch-17 lr: 5e-06
+Epoch-17 lr: 5e-06
+epoch 17 training time: 560.951
+---------------
+2024-12-09 14:45:40.410363
+current #epochs=18, #steps=2023
+Epoch: [18][77/119]	Per Sample Total Time 0.33239	Per Sample Data Time 0.23342	Per Sample DNN Time 0.09896	Train Loss 0.2537	
+start validation
+mAP: 0.317800
+AUC: 0.808405
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.233243
+train_loss: 0.254572
+valid_loss: 0.720844
+validation finished
+normal learning rate scheduler step
+Epoch-18 lr: 5e-06
+Epoch-18 lr: 5e-06
+epoch 18 training time: 549.009
+---------------
+2024-12-09 14:54:49.419356
+current #epochs=19, #steps=2142
+Epoch: [19][58/119]	Per Sample Total Time 0.30966	Per Sample Data Time 0.21062	Per Sample DNN Time 0.09904	Train Loss 0.2545	
+start validation
+mAP: 0.318089
+AUC: 0.808145
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.231897
+train_loss: 0.253520
+valid_loss: 0.720798
+validation finished
+normal learning rate scheduler step
+Epoch-19 lr: 5e-06
+Epoch-19 lr: 5e-06
+epoch 19 training time: 555.356
+---------------
+2024-12-09 15:04:04.774956
+current #epochs=20, #steps=2261
+Epoch: [20][39/119]	Per Sample Total Time 0.28947	Per Sample Data Time 0.19035	Per Sample DNN Time 0.09912	Train Loss 0.2511	
+start validation
+mAP: 0.319438
+AUC: 0.809403
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.238422
+train_loss: 0.252059
+valid_loss: 0.720667
+validation finished
+normal learning rate scheduler step
+Epoch-20 lr: 5.000000000000001e-07
+Epoch-20 lr: 5.000000000000001e-07
+epoch 20 training time: 558.555
+---------------
+2024-12-09 15:13:23.329817
+current #epochs=21, #steps=2380
+Epoch: [21][20/119]	Per Sample Total Time 0.37457	Per Sample Data Time 0.27555	Per Sample DNN Time 0.09903	Train Loss 0.2526	
+start validation
+mAP: 0.319094
+AUC: 0.809329
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.238037
+train_loss: 0.252937
+valid_loss: 0.720676
+validation finished
+normal learning rate scheduler step
+Epoch-21 lr: 5.000000000000001e-07
+Epoch-21 lr: 5.000000000000001e-07
+epoch 21 training time: 532.184
+---------------
+2024-12-09 15:22:15.514162
+current #epochs=22, #steps=2499
+Epoch: [22][1/119]	Per Sample Total Time 0.25780	Per Sample Data Time 0.15870	Per Sample DNN Time 0.09910	Train Loss 0.2641	
+Epoch: [22][101/119]	Per Sample Total Time 0.32093	Per Sample Data Time 0.22178	Per Sample DNN Time 0.09915	Train Loss 0.2516	
+start validation
+mAP: 0.318919
+AUC: 0.809222
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.237482
+train_loss: 0.251246
+valid_loss: 0.720672
+validation finished
+normal learning rate scheduler step
+Epoch-22 lr: 5.000000000000001e-07
+Epoch-22 lr: 5.000000000000001e-07
+epoch 22 training time: 520.698
+---------------
+2024-12-09 15:30:56.211714
+current #epochs=23, #steps=2618
+Epoch: [23][82/119]	Per Sample Total Time 0.32667	Per Sample Data Time 0.22759	Per Sample DNN Time 0.09908	Train Loss 0.2521	
+start validation
+mAP: 0.318655
+AUC: 0.809022
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236443
+train_loss: 0.251578
+valid_loss: 0.720678
+validation finished
+normal learning rate scheduler step
+Epoch-23 lr: 5.000000000000001e-07
+Epoch-23 lr: 5.000000000000001e-07
+epoch 23 training time: 532.914
+---------------
+2024-12-09 15:39:49.126162
+current #epochs=24, #steps=2737
+Epoch: [24][63/119]	Per Sample Total Time 0.34293	Per Sample Data Time 0.24403	Per Sample DNN Time 0.09890	Train Loss 0.2519	
+start validation
+mAP: 0.318634
+AUC: 0.809093
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236814
+train_loss: 0.250716
+valid_loss: 0.720670
+validation finished
+normal learning rate scheduler step
+Epoch-24 lr: 5.000000000000001e-07
+Epoch-24 lr: 5.000000000000001e-07
+epoch 24 training time: 536.709
+---------------
+2024-12-09 15:48:45.835468
+current #epochs=25, #steps=2856
+Epoch: [25][44/119]	Per Sample Total Time 0.31287	Per Sample Data Time 0.21382	Per Sample DNN Time 0.09905	Train Loss 0.2533	
+start validation
+mAP: 0.318833
+AUC: 0.809085
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236772
+train_loss: 0.250368
+valid_loss: 0.720665
+validation finished
+normal learning rate scheduler step
+Epoch-25 lr: 5.000000000000001e-08
+Epoch-25 lr: 5.000000000000001e-08
+epoch 25 training time: 536.025
+---------------
+2024-12-09 15:57:41.860321
+current #epochs=26, #steps=2975
+Epoch: [26][25/119]	Per Sample Total Time 0.30932	Per Sample Data Time 0.21044	Per Sample DNN Time 0.09888	Train Loss 0.2530	
+start validation
+mAP: 0.318789
+AUC: 0.809036
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236518
+train_loss: 0.252544
+valid_loss: 0.720665
+validation finished
+normal learning rate scheduler step
+Epoch-26 lr: 5.000000000000001e-08
+Epoch-26 lr: 5.000000000000001e-08
+epoch 26 training time: 527.118
+---------------
+2024-12-09 16:06:28.978272
+current #epochs=27, #steps=3094
+Epoch: [27][6/119]	Per Sample Total Time 0.27022	Per Sample Data Time 0.17148	Per Sample DNN Time 0.09874	Train Loss 0.2581	
+Epoch: [27][106/119]	Per Sample Total Time 0.33806	Per Sample Data Time 0.23906	Per Sample DNN Time 0.09900	Train Loss 0.2533	
+start validation
+mAP: 0.318812
+AUC: 0.809046
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236567
+train_loss: 0.252880
+valid_loss: 0.720662
+validation finished
+normal learning rate scheduler step
+Epoch-27 lr: 5.000000000000001e-08
+Epoch-27 lr: 5.000000000000001e-08
+epoch 27 training time: 551.806
+---------------
+2024-12-09 16:15:40.783963
+current #epochs=28, #steps=3213
+Epoch: [28][87/119]	Per Sample Total Time 0.31111	Per Sample Data Time 0.21206	Per Sample DNN Time 0.09906	Train Loss 0.2521	
+start validation
+mAP: 0.318442
+AUC: 0.809050
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236588
+train_loss: 0.251809
+valid_loss: 0.720661
+validation finished
+normal learning rate scheduler step
+Epoch-28 lr: 5.000000000000001e-08
+Epoch-28 lr: 5.000000000000001e-08
+epoch 28 training time: 546.116
+---------------
+2024-12-09 16:24:46.900552
+current #epochs=29, #steps=3332
+Epoch: [29][68/119]	Per Sample Total Time 0.27996	Per Sample Data Time 0.18078	Per Sample DNN Time 0.09919	Train Loss 0.2544	
+start validation
+mAP: 0.318442
+AUC: 0.809055
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236614
+train_loss: 0.252644
+valid_loss: 0.720657
+validation finished
+normal learning rate scheduler step
+Epoch-29 lr: 5.000000000000001e-08
+Epoch-29 lr: 5.000000000000001e-08
+epoch 29 training time: 542.465
+---------------
+2024-12-09 16:33:49.365163
+current #epochs=30, #steps=3451
+Epoch: [30][49/119]	Per Sample Total Time 0.27773	Per Sample Data Time 0.17867	Per Sample DNN Time 0.09906	Train Loss 0.2527	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.253912
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-30 lr: 5.000000000000002e-09
+Epoch-30 lr: 5.000000000000002e-09
+epoch 30 training time: 546.638
+---------------
+2024-12-09 16:42:56.003621
+current #epochs=31, #steps=3570
+Epoch: [31][30/119]	Per Sample Total Time 0.26776	Per Sample Data Time 0.16875	Per Sample DNN Time 0.09901	Train Loss 0.2520	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.252801
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-31 lr: 5.000000000000002e-09
+Epoch-31 lr: 5.000000000000002e-09
+epoch 31 training time: 546.143
+---------------
+2024-12-09 16:52:02.146993
+current #epochs=32, #steps=3689
+Epoch: [32][11/119]	Per Sample Total Time 0.33428	Per Sample Data Time 0.23512	Per Sample DNN Time 0.09916	Train Loss 0.2455	
+Epoch: [32][111/119]	Per Sample Total Time 0.32946	Per Sample Data Time 0.23046	Per Sample DNN Time 0.09900	Train Loss 0.2517	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.252139
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-32 lr: 5.000000000000002e-09
+Epoch-32 lr: 5.000000000000002e-09
+epoch 32 training time: 542.935
+---------------
+2024-12-09 17:01:05.082195
+current #epochs=33, #steps=3808
+Epoch: [33][92/119]	Per Sample Total Time 0.33450	Per Sample Data Time 0.23552	Per Sample DNN Time 0.09898	Train Loss 0.2525	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.253879
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-33 lr: 5.000000000000002e-09
+Epoch-33 lr: 5.000000000000002e-09
+epoch 33 training time: 541.742
+---------------
+2024-12-09 17:10:06.824102
+current #epochs=34, #steps=3927
+Epoch: [34][73/119]	Per Sample Total Time 0.34936	Per Sample Data Time 0.25017	Per Sample DNN Time 0.09919	Train Loss 0.2544	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.253242
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-34 lr: 5.000000000000002e-09
+Epoch-34 lr: 5.000000000000002e-09
+epoch 34 training time: 554.905
+---------------
+2024-12-09 17:19:21.729564
+current #epochs=35, #steps=4046
+Epoch: [35][54/119]	Per Sample Total Time 0.29462	Per Sample Data Time 0.19558	Per Sample DNN Time 0.09904	Train Loss 0.2515	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.250624
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-35 lr: 5.000000000000002e-10
+Epoch-35 lr: 5.000000000000002e-10
+epoch 35 training time: 551.887
+---------------
+2024-12-09 17:28:33.616238
+current #epochs=36, #steps=4165
+Epoch: [36][35/119]	Per Sample Total Time 0.36587	Per Sample Data Time 0.26715	Per Sample DNN Time 0.09872	Train Loss 0.2512	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.255163
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-36 lr: 5.000000000000002e-10
+Epoch-36 lr: 5.000000000000002e-10
+epoch 36 training time: 537.442
+---------------
+2024-12-09 17:37:31.057787
+current #epochs=37, #steps=4284
+Epoch: [37][16/119]	Per Sample Total Time 0.31151	Per Sample Data Time 0.21274	Per Sample DNN Time 0.09876	Train Loss 0.2550	
+Epoch: [37][116/119]	Per Sample Total Time 0.34506	Per Sample Data Time 0.24597	Per Sample DNN Time 0.09909	Train Loss 0.2531	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.252830
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-37 lr: 5.000000000000002e-10
+Epoch-37 lr: 5.000000000000002e-10
+epoch 37 training time: 561.398
+---------------
+2024-12-09 17:46:52.456024
+current #epochs=38, #steps=4403
+Epoch: [38][97/119]	Per Sample Total Time 0.32866	Per Sample Data Time 0.22951	Per Sample DNN Time 0.09915	Train Loss 0.2524	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.252653
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-38 lr: 5.000000000000002e-10
+Epoch-38 lr: 5.000000000000002e-10
+epoch 38 training time: 554.750
+---------------
+2024-12-09 17:56:07.205688
+current #epochs=39, #steps=4522
+Epoch: [39][78/119]	Per Sample Total Time 0.31718	Per Sample Data Time 0.21801	Per Sample DNN Time 0.09917	Train Loss 0.2549	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.254068
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-39 lr: 5.000000000000002e-10
+Epoch-39 lr: 5.000000000000002e-10
+epoch 39 training time: 543.827
+---------------
+2024-12-09 18:05:11.032485
+current #epochs=40, #steps=4641
+Epoch: [40][59/119]	Per Sample Total Time 0.32869	Per Sample Data Time 0.22964	Per Sample DNN Time 0.09905	Train Loss 0.2499	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.250437
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-40 lr: 5.000000000000003e-11
+Epoch-40 lr: 5.000000000000003e-11
+epoch 40 training time: 550.557
+---------------
+2024-12-09 18:14:21.589652
+current #epochs=41, #steps=4760
+Epoch: [41][40/119]	Per Sample Total Time 0.32940	Per Sample Data Time 0.23045	Per Sample DNN Time 0.09894	Train Loss 0.2526	
+start validation
+mAP: 0.318522
+AUC: 0.809057
+Avg Precision: 0.083333
+Avg Recall: 1.000000
+d_prime: 1.236625
+train_loss: 0.252642
+valid_loss: 0.720654
+validation finished
+normal learning rate scheduler step
+Epoch-41 lr: 5.000000000000003e-11
+Epoch-41 lr: 5.000000000000003e-11
+epoch 41 training time: 540.912
+Stopped early at epoch 42
+---------------evaluate on the validation set---------------
+Accuracy: 0.321951
+AUC: 0.809403
+---------------the evaluation dataloader---------------
+now using following mask: 0 freq, 0 time
+now using mix-up with rate 0.000000
+now process birdclef
+now skip normalization (use it ONLY when you are computing the normalization stats).
+number of classes is 12
+---------------evaluate on the test set---------------
+Accuracy: 0.297561
+AUC: 0.784988
