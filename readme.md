@@ -19,6 +19,11 @@ The goal of this project is to **identify bird species from their calls** using 
 - Little Egret
 - Red-whiskered Bulbul
 
+<figure>
+  <img src="Images/Spectrogram.png" alt="Filter bank (Spectrogram) generated from  a Great Egret call." width="500">
+  <figcaption>Filter bank (Spectrogram) generated from  a Great Egret call.</figcaption>
+</figure>
+
 ## Problem Statement
 
 Many species of birds are **under-studied**, and **labeled audio datasets** for classification are often **scarce and expensive** to acquire due to:
@@ -38,15 +43,32 @@ We investigate **multiple pretraining approaches** and **fine-tuning strategies*
 - Pretrained on **ImageNet** (visual data) and **AudioSet** (audio clips).
 - **Key hypothesis**: AST pretrained on **both ImageNet & AudioSet** will outperform ImageNet-only AST.
 
+<figure>
+  <img src="Images/AST.png" alt="AST process." width="500">
+  <figcaption>Representation of Audio Spectrogram Transformers.</figcaption>
+</figure>
+
 ### **Self-Supervised Audio Spectrogram Transformer (SSAST)**
 - A **self-supervised learning** framework for AST.
 - Pretrained on **unlabeled** data from **AudioSet** and **Librispeech**.
 - **Key hypothesis**: SSAST should fine-tune faster and perform better on limited data.
 
+<figure>
+  <img src="Images/SSAST.png" alt="SSAST Process." width="500">
+  <figcaption>Representation of Self-Supervised Audio Spectrogram Transformers.</figcaption>
+</figure>
+
 ### **Fine-Tuning Strategies**
 - **Full-layer fine-tuning** vs. **last-layer fine-tuning**.
 - **Balanced accuracy & mAP metrics** for model evaluation.
 - **Avoiding data leakage
+
+## **Results Achieved**
+The best performing model was achieved through full fine-tuning of an AST model pretrained on ImageNet and AudioSet, which achieved 91.5% balanced accuracy, in addition to performing well at distinguishing similar species.
+<figure>
+  <img src="Images/ResultsCM.png" alt="Confusion Matrix of best performing AST model." width="500">
+  <figcaption>Confusion Matrix of best performing AST model.</figcaption>
+</figure>
 
 ## **Source Models and Data**
 - AST pretrained models from https://github.com/YuanGongND/ast/tree/master.
