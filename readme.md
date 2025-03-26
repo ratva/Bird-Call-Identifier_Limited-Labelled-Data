@@ -1,4 +1,4 @@
-# 🐦 Bird Call Identifier: Learning From Limited Labeled Data
+# Bird Call Identifier: Learning From Limited Labeled Data
 
 This repository contains our research-driven implementation of **bird call classification** using **transfer learning across modalities**, adapted from the **Audio Spectrogram Transformer (AST)** and **Self-Supervised Audio Spectrogram Transformer (SSAST)** models. This work builds upon **AST: Audio Spectrogram Transformer** (Gong et al.) and **SSAST: Self-Supervised Audio Spectrogram Transformer** methodologies to classify bird species from audio recordings with **limited labeled data**.
 
